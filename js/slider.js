@@ -5,9 +5,9 @@ const s1 = document.getElementById('s1');
 const s2 = document.getElementById('s2');
 const s3 = document.getElementById('s3');
 
-const image1 = '../images/happy-couple-gamers-with-controllers-vr-headsets-isolated-dark-background.png';
-const image2 = '../images/block2.png';
-const image3 = '../images/happy-couple-gamers-with-controllers-vr-headsets-isolated-dark-backgroundsolo.png';
+const image1 = 'images/happy-couple-gamers-with-controllers-vr-headsets-isolated-dark-background.png';
+const image2 = 'images/block2.png';
+const image3 = 'images/happy-couple-gamers-with-controllers-vr-headsets-isolated-dark-backgroundsolo.png';
 
 let s1box = false;
 let s2box = true;
@@ -26,7 +26,7 @@ function autoSlider() {
 
     block2.style.backgroundPosition = '0% 0%';
     setTimeout(() => {
-      block2.style.backgroundImage = `url(../${image3})`;
+      block2.style.backgroundImage = `url(${image3})`;
       block2.style.backgroundPosition = 'center';
     }, 500);
   }
@@ -41,7 +41,7 @@ function autoSlider() {
 
     block2.style.backgroundPosition = '0% 0%';
     setTimeout(() => {
-      block2.style.backgroundImage = `url(../${image1})`;
+      block2.style.backgroundImage = `url(${image1})`;
       block2.style.backgroundPosition = 'center';
     }, 500);
   }
@@ -56,7 +56,7 @@ function autoSlider() {
 
     block2.style.backgroundPosition = '0% 0%';
     setTimeout(() => {
-      block2.style.backgroundImage = `url(../${image2})`;
+      block2.style.backgroundImage = `url(${image2})`;
       block2.style.backgroundPosition = 'center';
     }, 500);
   }
@@ -78,7 +78,7 @@ s.forEach(element => {
 
       block2.style.backgroundPosition = '0% 0%';
       setTimeout(() => {
-        block2.style.backgroundImage = `url(../${image1})`;
+        block2.style.backgroundImage = `url(${image1})`;
         block2.style.backgroundPosition = 'center';
       }, 500);
       clearInterval(autoclick);
@@ -88,7 +88,7 @@ s.forEach(element => {
         s3box = false;
       block2.style.backgroundPosition = '0% 0%';
       setTimeout(() => {
-        block2.style.backgroundImage = `url(../${image2})`;
+        block2.style.backgroundImage = `url(${image2})`;
         block2.style.backgroundPosition = 'center';
       }, 500);
       clearInterval(autoclick);
@@ -100,7 +100,7 @@ s.forEach(element => {
         s3box = true;
       block2.style.backgroundPosition = '0% 0%';
       setTimeout(() => {
-        block2.style.backgroundImage = `url(../${image3})`;
+        block2.style.backgroundImage = `url(${image3})`;
         block2.style.backgroundPosition = 'center';
       }, 500);
       clearInterval(autoclick);

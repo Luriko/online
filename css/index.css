@@ -7,10 +7,6 @@
 @import url(arrow.css);
 @import url(dropdown.css);
 @import url(cursor.css);
-*{
-    cursor: none;
-}
-
 #learn:hover{
 background: linear-gradient(180deg, rgba(218,248,255,.7) 0%, rgba(218,248,255,0.48) 35%, rgba(218,248,255,0.01) 100%) !important;
 }
@@ -21,7 +17,7 @@ header{
     margin: 10dvh;
 }
 #image{
-    background-image: url(../images/emmvdys1y8291\ 1.png) !important;
+    background-image: url(../images/emmvdys1y82911.png) !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

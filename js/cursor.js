@@ -13,11 +13,11 @@ const moveCursor = (e) => {
      
     cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     if (e.target.matches('a') || e.target.matches('button')) {
-        cursor.style.backgroundImage = `url('${path_img2}')`;
+        cursor.style.backgroundImage = `url(..'${path_img2}')`;
         
     }else{
 
-        cursor.style.backgroundImage = `url('${path_img}')`;
+        cursor.style.backgroundImage = `url(..'${path_img}')`;
     }
 }
 
@@ -28,10 +28,10 @@ window.addEventListener('scroll', moveCursor);
 // Override default pointer cursor for all links
 document.querySelectorAll('a').forEach(link => {
     link.style.cursor = 'none'; // Hide default pointer cursor for links
-    cursor.style.backgroundImage = `url('${path_img2}')`;
+    cursor.style.backgroundImage = `url(..'${path_img2}')`;
 });
 document.querySelectorAll('button').forEach(link => {
     link.style.cursor = 'none'; // Hide default pointer cursor for links
-    cursor.style.backgroundImage = `url('${path_img2}')`;
+    cursor.style.backgroundImage = `url(..'${path_img2}')`;
 
 });

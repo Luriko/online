@@ -1,0 +1,196 @@
+@import url(blocks.css);
+@import url(font_style.css);
+@import url(glitch_font.css);
+@import url(comments.css);
+@import url(preloader.css);
+@import url(slider.css);
+@import url(arrow.css);
+@import url(dropdown.css);
+@import url(cursor.css);
+*{
+    cursor: none;
+}
+
+#learn:hover{
+background: linear-gradient(180deg, rgba(218,248,255,.7) 0%, rgba(218,248,255,0.48) 35%, rgba(218,248,255,0.01) 100%) !important;
+}
+body{
+    background-color: rgb(0, 2, 43,80%);
+}
+header{
+    margin: 10dvh;
+}
+#image{
+    background-image: url(../images/emmvdys1y8291\ 1.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+#margin{
+    margin: 10px 0;
+}
+#footer2{
+    margin: -80px 0px;
+}
+label{
+    color: #DAF8FF;
+}
+.navbar{
+    background-color: rgb(0, 2, 43,75%);
+    flex-direction: column;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-item {
+    margin: 0 10px;
+    color: #DAF8FF;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+#phone, #message{
+    background: linear-gradient(180deg, rgba(218,248,255,.7) 0%, rgba(218,248,255,0.48) 35%, rgba(218,248,255,0.01) 100%) !important;
+    color: #DAF8FF;
+}
+.active{
+    color: #aaeefc !important;
+}
+.block_glass{
+    background-color: rgb(0, 2, 43,25%);
+    backdrop-filter: blur(20px);
+    /* filter: blur(10px); */
+}
+.block_glass::before{
+    position: absolute;
+    z-index: -1;
+    /* put it *behind* parent */
+    /* go outside padding-box by 
+     * a border-width ($b) in every direction */
+    top: -1.5em;
+    right: -1.5em;
+    bottom: -1.5em;
+    left: -1.5em;
+    border: inherit;
+    border-color: transparent;
+    background: inherit;
+    background-clip: border-box;
+    content: "";
+    backdrop-filter: blur(20px);
+
+}
+#get_started{
+    background-color: rgb(0, 2, 43);
+    border: 2px solid #DAF8FF;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.632) !important;
+}
+.card::before{
+    position: absolute;
+    z-index: -1;
+    /* put it *behind* parent */
+    /* go outside padding-box by 
+     * a border-width ($b) in every direction */
+    top: -.65em;
+    right: -.65em;
+    bottom: -.65em;
+    left: -.65em;
+    border: inherit !important;
+    border-color: transparent !important;
+    background: inherit;
+    background-clip: border-box;
+    content: "";
+    backdrop-filter: blur(30px);
+
+}
+
+
+.card{
+    background-color: rgb(0, 2, 43,25%);
+}
+.card-body{
+    width: 300px;
+    margin: 0px 10px;
+}
+.bottom{
+    margin: 0 0px;
+}
+
+.bottom > h3{
+    animation: neonize 2s  infinite ease-in-out;
+    margin: 30px 0;
+}
+
+.bottom > p{
+    margin-bottom: 80px;
+}
+
+
+@keyframes neonize {
+    0%{
+        text-shadow: 
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 3px #DAF8FF,
+        0 0 5px #DAF8FF,
+        0 0 10px #DAF8FF,
+        0 0 20px #DAF8FF;
+    }
+    50%{
+        text-shadow: 
+        0 0 2px #fff,
+        0 0 3px #fff,
+        0 0 4px #DAF8FF,
+        0 0 8px #DAF8FF,
+        0 0 16px #DAF8FF,
+        0 0 24px #DAF8FF;
+    }
+    100%{
+        text-shadow: 
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 3px #DAF8FF,
+        0 0 5px #DAF8FF,
+        0 0 10px #DAF8FF,
+        0 0 20px #DAF8FF;
+
+    }
+}
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn-like {
+
+    object-fit: cover;
+    transition: transform 1s;
+}
+.comment{
+    backdrop-filter: blur(1px);
+}
+@media (max-width: 1400px) { 
+    .profile-img {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 1400px) { 
+    .profile-img {
+        width: 30px;
+        height: 30px;
+    }
+}

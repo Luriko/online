@@ -1,11 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>VReality</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="\images/logo.svg" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Custom theme CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>test</h1>
+    <div id="cursor"></div>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <div id="block1" class="mx-auto d-block section">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!"><img src="\images/logo.svg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link glitch_link" aria-current="page"
+                                href="tel:79218882341">+7 (921) 888 23 41</a></li>
+                        <li class="nav-item"><a class="nav-link active glitch_link" aria-current="page"
+                                href="#!">ГЛАВНАЯ</a></li>
+
+                        <li class="nav-item"><a class="nav-link glitch_link" href="#block2">О НАС</a></li>
+                        <li class="nav-item"><a class="nav-link glitch_link" href="#form">ОБРАТНАЯ СВЯЗЬ</a></li>
+                        <div class="dropdown nav-item">
+                            <button class="dropbtn nav-item">ПРЕИМУЩЕСТВА</button>
+                            <div class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <li class="nav-item"><a class="nav-link glitch_link" href="http://yii/site/login">ВХОД</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5" id="margin1">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-7 block_glass">
+                        <div class="text-center my-5">
+                            <h1 class="display-6 fw-bolder mb-2 glitch" data-text="Фантастические миры в реальность">
+                                Воплотите ваши мечты в реальность </h1>
+                            <div class="countdown-container">
+                                <div class="countdown-item">
+                                    <span id="days">00</span>
+                                    <span>Дней</span>
+                                </div>
+                                <div class="countdown-item">
+                                    <span id="hours">00</span>
+                                    <span>Часов</span>
+                                </div>
+                                <div class="countdown-item">
+                                    <span id="minutes">00</span>
+                                    <span>Минут</span>
+                                </div>
+                                <div class="countdown-item">
+                                    <span id="seconds">00</span>
+                                    <span>Секунд</span>
+                                </div>
+                            </div>
+                            <p class="mb-4">Хватит мечтать, пора воплащать! Реализуйте свои мечты в нашем VR клубе!
+                            </p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#form"
+                                    id="get_started">ПОЗВОНИТЬ</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="#block2" id="learn">УЗНАТЬ БОЛЬШЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <svg class="arrows" id="arrow">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+    </div>
+    <!-- Features section-->
+    <section class="py-5 border-bottom block img img-fluid block section" id="block2">
+        <div class="container px-5 my-5">
+            <div class="row gx-5"  id="margin2">
+                <div class="mkt-3dSlider py-6">
+                    <h1 class="mkt-3dSlider-title">Почему именно мы?</h1>
+                    <p class="mkt-3dSlider-description"></p>
+                    <section id="slider">
+
+
+                        <input class="card-slider" type="radio" name="slider" id="s1">
+                        <input class="card-slider" type="radio" name="slider" id="s2" checked>
+                        <input class="card-slider" type="radio" name="slider" id="s3">
+
+
+                        <label for="s1" id="slide1" class="card-slider">
+                            <div class="container background2">
+                                <div class="bottom">
+                                    <h3>Зови всех!</h3>
+                                    <p>Разделите свои ощущения со своей семьёй или друзьями!</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label for="s2" id="slide2" class="card-slider">
+                            <div class="container background1">
+                                <div class="bottom">
+                                    <h3>Полное погружение!</h3>
+                                    <p>Оторвитесь от реальности и окунитесь в совершенно новый мир с качественным оборудованием</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label for="s3" id="slide3" class="card-slider">
+                            <div class="container background3">
+                                <div class="bottom">
+                                    <h3>Ассистент на страже!</h3>
+                                    <p>Всегда поможет и предотвратит инциденты!</p>
+                                </div>
+                            </div>
+                        </label>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project -->
+    <section class="py-5 section" id="block3">
+        <div class="container px-5 mb-5" id="margin3">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">АКЦИЯ</span></h1>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-9 col-sm-9 col-lg-11">
+                    <!-- Project Card 1-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 card">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h1>Запишитесь сейчас <br>и получите 50% скидку!</h1>
+                                    <div class="d-grid"><a href="#form" class="btn btn-primary btn-lg" id="get_started"
+                                            type="submit">ОТПРАВИТЬ</a></div>
+                                </div>
+                                <img class="img-fluid" src="images/emmvdys1y8291 1.png" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+    </section>
+    <!-- comments section-->
+    <section class="d-flex py-5 border-bottom justify-content-center flex-column section" id="block4">
+        <h1 class="display-5 fw-bolder mb-0 text-center">Отзывы</h1>
+        <h3 class="display-5 fw-bolder mb-0 text-center"><span class="text-gradient d-inline">Проведите по комментарию,
+                если хотите ускорить процесс</span></h3>
+        <div class="container mt-5 d-flex align-items-center">
+            <div class="row  d-flex align-items-center">
+                <div class="col-xxl-4 col-lg-12 col-md-12 col-sm-12">
+                    <div class="comment card" id="margin">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <img src="/images/profile1.jpg" alt="Profile Image" class="profile-img">
+                                <span class="ms-2">User 1</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo accusantium, dolores cum
+                                eaque ex velit et repellendus libero! Perferendis placeat tenetur distinctio omnis vitae
+                                magnam quos optio fugiat sunt aperiam?</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <span>Дата: 1 Января, 2022 22:03</span>
+                            </div>
+                            <div id="count">
+                                <img src="images/like.svg" alt="" class="btn-like" id="img1"><span id="like1">31</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-lg-12 col-md-12 col-sm-12">
+                    <div class="comment card" id="margin">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <img src="/images/profile2.jpg" alt="Profile Image" class="profile-img">
+                                <span class="ms-2">User 2 16:59</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo accusantium, dolores cum
+                                eaque ex velit et repellendus libero! Perferendis placeat tenetur distinctio omnis vitae
+                                magnam quos optio fugiat sunt aperiam?</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <span>Дата: 15 Февраля, 2022</span>
+                            </div>
+                            <div id="count">
+                                <img src="images/like.svg" alt="" class="btn-like" id="img2"><span id="like2">7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-lg-12 col-md-12 col-sm-12">
+                    <div class="comment card" id="margin">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <img src="/images/profile3.png" alt="Profile Image" class="profile-img">
+                                <span class="ms-2">User 3</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo accusantium, dolores cum
+                                eaque ex velit et repellendus libero! Perferendis placeat tenetur distinctio omnis vitae
+                                magnam quos optio fugiat sunt aperiam?</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <span>Дата: 10 Марта, 2022 10:15</span>
+                            </div>
+                            <div id="count">
+                                <img src="images/like.svg" alt="" class="btn-like" id="img3"><span id="like3">13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section-->
+    <section class="py-5 block5 section" id="form">
+        <div class="container px-5 my-5 px-5" >
+            <div class="row gx-5 justify-content-center" id="margin5">
+                <div class="col-lg-6 card">
+                    <form class="text-center" id="contactForm" method="post" action="">
+                        <h2 class="top">Обратная связь</h2>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                data-sb-validations="required" />
+                            <label for="phone" id="label_phone">Номер телефона</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            </div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Сообщение</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-light btn-lg px-4" id="send">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <nav class="navbar navbar-expand-lg navbar-dark align-self-end" id="footer2">
+
+        <div class="container px-5" id="footer">
+            <a class="navbar-brand" href="#!"><img src="\images/logo.svg" alt="logo"></a>
+            <p>© Все права защищены 2024</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link glitch_link" aria-current="page"
+                            href="tel:79218882341">+7 (921) 888 23 41</a></li>
+                    <li class="nav-item"><a class="nav-link active glitch_link" aria-current="page"
+                            href="#block1">ГЛАВНАЯ</a></li>
+                    <li class="nav-item"><a class="nav-link glitch_link" href="#block2">О НАС</a></li>
+                    <li class="nav-item"><a class="nav-link glitch_link" href="#form">ОБРАТНАЯ СВЯЗЬ</a></li>
+                    <li class="nav-item"><a class="nav-link glitch_link" href="http://yii/site/login">ВХОД</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/timer.js"></script>
+    <script src="js/comments.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/local_storage.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/screen_size.js"></script>
+    <script src="js/arrow.js"></script>
+    <script src="js/cursor.js"></script>
+
+
+    <!-- Helping JS -->
+
+    
+
 </body>
+
 </html>

@@ -1,0 +1,37 @@
+h1{
+    font-family: 'Montserrat' !important;
+    font-size:calc(.2dvw + 54px);
+    
+    color: #DAF8FF !important;
+    letter-spacing: .1dvw !important;
+
+}
+h3,span, h2{
+    font-family: 'Montserrat' !important;
+    font-size: calc(.2dvw + 40px) !important;
+    color: #DAF8FF;
+    letter-spacing: .1dvw !important;
+
+}
+h2,h1{
+    animation: neonize 2s  infinite ease-in-out;
+    letter-spacing: .1dvw !important;
+
+}
+p,a ,input,textarea, button{
+    font-family: 'Oswald' !important;
+    font-size: calc(.1dvw + 24px) !important;
+    color: #DAF8FF !important;
+    letter-spacing: .1dvw !important;
+}
+span {
+    font-size: calc(.1dvw + 24px) !important;
+    font-weight: bold;
+    font-family: 'Oswald' !important;
+}
+label{
+    font-size: calc(.1dvw + 20px) !important;
+}
+a{
+    color: #DAF8FF !important;
+}

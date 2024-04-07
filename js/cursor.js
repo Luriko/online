@@ -1,5 +1,5 @@
 const cursor = document.getElementById('cursor');
-const path_img = 'images/_cursor.png';
+const path_img = 'images/cursor.png';
 const path_img2 = 'images/stick2.png';
 
 
@@ -12,11 +12,9 @@ const moveCursor = (e) => {
     const mouseX = e.clientX + window.scrollX;
      
     cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-    if (e.target.matches('a') || e.target.matches('button') || e.target.matches('input') || e.target.matches('textarea')) {
+    if (e.target.tagName == 'A' || e.target.tagName == 'BUTTON' || e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA') {
         cursor.style.backgroundImage = `url('${path_img2}')`;
-        
     }else{
-
         cursor.style.backgroundImage = `url('${path_img}')`;
     }
 }

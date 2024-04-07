@@ -1,4 +1,4 @@
-/* #cursor{
+#cursor{
     position: absolute;
     z-index: 10000;
     width: 60px;
@@ -8,6 +8,6 @@
     background-size: cover;
     background-position: center;
 
-
+    margin: -10px;
     pointer-events: none;
-} */
+}

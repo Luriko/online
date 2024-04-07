@@ -15,19 +15,19 @@ let clicked3 = false;
 
 
 if (local_clicked1 == 'true') {
-  img1.setAttribute('src','../images/liked.svg');
+  img1.setAttribute('src','images/liked.svg');
   like1.innerHTML = localStorage.getItem('like1');
   clicked1 = true;
 
 }
 if (local_clicked2 == 'true') {
-  img2.setAttribute('src','../images/liked.svg');
+  img2.setAttribute('src','images/liked.svg');
   like2.innerHTML = localStorage.getItem('like2');
   clicked2 = true;
 
 }
 if (local_clicked3 == 'true') {
-  img3.setAttribute('src','../images/liked.svg');
+  img3.setAttribute('src','images/liked.svg');
   like3.innerHTML = localStorage.getItem('like3');
   clicked3 = true;
 }
@@ -36,7 +36,7 @@ img1.addEventListener('click',function(){
   if (!clicked1) {
     clicked1 = true;
     
-    img1.setAttribute('src','../images/liked.svg');
+    img1.setAttribute('src','images/liked.svg');
     
     localStorage.setItem('like1',Number(like1.innerHTML) + 1);
     localStorage.removeItem('clicked1');
@@ -49,7 +49,7 @@ img1.addEventListener('click',function(){
   }else{
     clicked1 = false;
     
-    img1.setAttribute('src','../images/like.svg');
+    img1.setAttribute('src','images/like.svg');
     
     localStorage.setItem('like1',Number(like1.innerHTML) - 1);
     localStorage.removeItem('clicked1');
@@ -65,7 +65,7 @@ img2.addEventListener('click',function(){
   if (!clicked2) {
     clicked2 = true;
     
-    img2.setAttribute('src','../images/liked.svg');
+    img2.setAttribute('src','images/liked.svg');
     
     localStorage.setItem('like2',Number(like1.innerHTML) + 1);
     localStorage.removeItem('clicked2');
@@ -78,7 +78,7 @@ img2.addEventListener('click',function(){
   }else{
     clicked2 = false;
     
-    img2.setAttribute('src','../images/like.svg');
+    img2.setAttribute('src','images/like.svg');
     
     localStorage.setItem('like2',Number(like2.innerHTML) - 1);
     localStorage.removeItem('clicked2');
@@ -94,7 +94,7 @@ img3.addEventListener('click',function(){
   if (!clicked3) {
     clicked3 = true;
     
-    img3.setAttribute('src','../images/liked.svg');
+    img3.setAttribute('src','images/liked.svg');
     
     localStorage.setItem('like3',Number(like3.innerHTML) + 1);
     localStorage.removeItem('clicked3');
@@ -107,7 +107,7 @@ img3.addEventListener('click',function(){
   }else{
     clicked3 = false;
     
-    img3.setAttribute('src','../images/like.svg');
+    img3.setAttribute('src','images/like.svg');
     
     localStorage.setItem('like3',Number(like3.innerHTML) - 1);
     localStorage.removeItem('clicked3');
